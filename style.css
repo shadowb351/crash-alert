@@ -1,0 +1,156 @@
+/* Base Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f7fa;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  header h1 {
+    color: #e63946;
+    font-size: 2.5rem;
+  }
+  
+  header p {
+    color: #457b9d;
+    font-size: 1.2rem;
+  }
+  
+  /* Protection Panel */
+  .protection-panel {
+    background: white;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .status-indicator {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #f44336;
+    margin-right: 10px;
+  }
+  
+  .status-indicator.active {
+    background: #4CAF50;
+    animation: pulse 1.5s infinite;
+  }
+  
+  @keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+  }
+  
+  /* Buttons */
+  .btn {
+    border: none;
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .btn i {
+    font-size: 1.2rem;
+  }
+  
+  .activate-btn {
+    background: #e63946;
+    color: white;
+  }
+  
+  .activate-btn:hover {
+    background: #c1121f;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(198, 12, 48, 0.3);
+  }
+  
+  .cancel-btn {
+    background: white;
+    color: #e63946;
+    border: 2px solid #e63946;
+    margin-top: 15px;
+  }
+  
+  /* Alert Sections */
+  .alert-countdown {
+    background: #fff3cd;
+    color: #856404;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+    animation: pulse 1.5s infinite;
+  }
+  
+  .alert-sent {
+    background: #d4edda;
+    color: #155724;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+  }
+  
+  .checkmark {
+    font-size: 3rem;
+    color: #28a745;
+    margin-bottom: 15px;
+  }
+  
+  .location-info {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 15px;
+  }
+  
+  /* Features Grid */
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .feature-card {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    text-align: center;
+    transition: all 0.3s;
+  }
+  
+  .feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  }
+  
+  .feature-card i {
+    font-size: 2.5rem;
+    color: #457b9d;
+    margin-bottom: 15px;
+  }
+  
+  /* Utility Classes */
+  .hidden {
+    display: none !important;
+  }

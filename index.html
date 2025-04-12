@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crash Alert System</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1><i class="fas fa-shield-alt"></i> Crash Alert</h1>
+      <p>Your intelligent road safety guardian</p>
+    </header>
+
+    <div class="protection-panel" id="protectionPanel">
+      <h2>
+        <span class="status-indicator" id="statusIndicator"></span>
+        <span id="statusText">Protection Inactive</span>
+      </h2>
+      
+      <button class="btn activate-btn" id="activateBtn">
+        <i class="fas fa-shield-alt"></i> Activate Protection
+      </button>
+
+      <div class="alert-countdown hidden" id="alertCountdown">
+        <h3><i class="fas fa-bell"></i> EMERGENCY DETECTED!</h3>
+        <p>Alerting authorities in: <span id="countdown">10</span> seconds</p>
+        <button class="btn cancel-btn" id="cancelBtn">
+          <i class="fas fa-times"></i> Cancel Alert
+        </button>
+      </div>
+
+      <div class="alert-sent hidden" id="alertSent">
+        <div class="checkmark">✓</div>
+        <h3><i class="fas fa-check-circle"></i> ALERT SENT!</h3>
+        <p>Help is on the way to:</p>
+        <div class="location-info">
+          <p><i class="fas fa-map-marker-alt"></i> Latitude: <span id="latitude"></span></p>
+          <p><i class="fas fa-map-marker-alt"></i> Longitude: <span id="longitude"></span></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="features-grid">
+      <div class="feature-card">
+        <i class="fas fa-ambulance"></i>
+        <h3>Instant Alerts</h3>
+        <p>Automatically notifies emergency services</p>
+      </div>
+      <div class="feature-card">
+        <i class="fas fa-language"></i>
+        <h3>Multilingual</h3>
+        <p>Recognizes "help" in 10+ languages</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
